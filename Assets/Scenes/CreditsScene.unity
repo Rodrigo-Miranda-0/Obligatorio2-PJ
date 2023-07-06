@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 270860709}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: d102934549b5bfa4a8fefc0972e7db4e, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &270860709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,6 +1009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2085189370}
+  - component: {fileID: 2085189371}
   m_Layer: 5
   m_Name: MenuButtons
   m_TagString: Untagged
@@ -1025,3 +1038,15 @@ RectTransform:
   m_AnchoredPosition: {x: -389.31, y: -208}
   m_SizeDelta: {x: 139.3835, y: 56.2651}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2085189371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085189369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d102934549b5bfa4a8fefc0972e7db4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
