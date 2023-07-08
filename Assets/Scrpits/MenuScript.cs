@@ -10,6 +10,11 @@ public class MenuScript : MonoBehaviour
     
     }
 
+    public void InstructionsScene()
+    {
+        SceneManager.LoadScene("InstructionsScene");
+    }
+
     public void CreditsScene() 
     {
         SceneManager.LoadScene("CreditsScene");
