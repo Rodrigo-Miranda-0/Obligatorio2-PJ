@@ -7,6 +7,6 @@ public class BackMenuScript : MonoBehaviour
 {
     public void BackToMenuScene()
     {
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene("MainScene");
     }
 }
