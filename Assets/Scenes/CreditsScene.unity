@@ -185,8 +185,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 1}
+    m_PressedColor: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -207,13 +207,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: d102934549b5bfa4a8fefc0972e7db4e, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2085189371}
+        m_TargetAssemblyTypeName: BackMenuScript, Assembly-CSharp
+        m_MethodName: BackToMenuScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e922526cd7bd26e4aae33b5ca222f313, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54ce1215f6410a94592e7b16b928f228, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -617,7 +617,7 @@ RectTransform:
   m_GameObject: {fileID: 1101557639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1.2136129}
+  m_LocalScale: {x: 1.5879188, y: 1.5879188, z: 1.3765134}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 631726872}
@@ -625,8 +625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34, y: 198.3}
-  m_SizeDelta: {x: 219.46, y: 50}
+  m_AnchoredPosition: {x: -31, y: 252}
+  m_SizeDelta: {x: 364.02, y: 46.5632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101557641
 MonoBehaviour:
@@ -887,7 +887,7 @@ RectTransform:
   m_GameObject: {fileID: 1449920369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.7, z: 0.90278}
+  m_LocalScale: {x: 0.68369997, y: 0.63812, z: 0.82297426}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 631726872}
@@ -895,7 +895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 86.651}
+  m_AnchoredPosition: {x: -15, y: 130}
   m_SizeDelta: {x: 770.7975, y: 173.3021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449920371
@@ -918,12 +918,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "YEAR: \t\t2023\nSUBJECT: \tProgramacion de Videojuegos\nTECHER: \t\tAriel
-    Coppes\nAUTHORS:\tJuan Manuel Rabunal - 232067\n\t       \t\tRodrigo Miranda
-    - 233827\n\nSpecial thanks to the following authors and asset providers:\r\n\r\nKenney
-    (www.kenney.nl) : \nFor providing a wide variety of high-quality assets, including
-    sprites, 3D models, sound effects, and music. \n\r\r\nThank you all for making
-    this project possible!"
+  m_text: "\r\nYEAR: \t\t2023\r\nSUBJECT: \tProgramacion de Videojuegos\r\nTECHER:
+    \t\tAriel Coppes\r\nAUTHORS:\tJuan Manuel Rabunal - 232067\r\n\t       \t\tRodrigo
+    Miranda - 233827\r\n\r\nSpecial thanks to the following authors and asset providers:\r\n\r\nKenney
+    (www.kenney.nl) : \r\nFor providing a wide variety of high-quality assets, including
+    sprites, 3D models, sound effects, and music. \r\n\r\nPNGTree: \r\nFor providing
+    the background image to the Menu.\r\n\r\n\r\nThank you all for making this project
+    possible!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14d015e703d2d024089e5c3a8f603590, type: 2}
   m_sharedMaterial: {fileID: 7264857678469508753, guid: 14d015e703d2d024089e5c3a8f603590, type: 2}
@@ -1035,7 +1036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -481.31, y: -277.87}
+  m_AnchoredPosition: {x: -481.31, y: -272}
   m_SizeDelta: {x: 139.3835, y: 56.2651}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2085189371
