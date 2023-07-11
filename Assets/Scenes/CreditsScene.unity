@@ -626,7 +626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 54ce1215f6410a94592e7b16b928f228, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 093ee4f527680864eb37b7faa83b4d7e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -679,8 +679,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31, y: 252}
-  m_SizeDelta: {x: 364.02, y: 46.5632}
+  m_AnchoredPosition: {x: 75, y: 344}
+  m_SizeDelta: {x: 294.3942, y: 46.5632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101557641
 MonoBehaviour:
@@ -729,8 +729,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -949,8 +949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: 130}
-  m_SizeDelta: {x: 770.7975, y: 173.3021}
+  m_AnchoredPosition: {x: 0, y: 234.07}
+  m_SizeDelta: {x: 679.9479, y: 173.3021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449920371
 MonoBehaviour:
@@ -972,9 +972,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\r\nYEAR: \t\t2023\r\nSUBJECT: \tProgramacion de Videojuegos\r\nTECHER:
-    \t\tAriel Coppes\r\nAUTHORS:\tJuan Manuel Rabunal - 232067\r\n\t       \t\tRodrigo
-    Miranda - 233827\r\n\r\nSpecial thanks to the following authors and asset providers:\r\n\r\nKenney
+  m_text: "\r\nYEAR:  2023\r\nSUBJECT:  Programacion de Videojuegos\r\nTECHER: \tAriel
+    Coppes\r\nAUTHORS: Juan Manuel Rabunal - 232067\r\n\t         \t  Rodrigo Miranda
+    - 233827\r\n\r\nSpecial thanks to the following authors and asset providers:\r\n\r\nKenney
     (www.kenney.nl) : \r\nFor providing a wide variety of high-quality assets, including
     sprites, 3D models, sound effects, and music. \r\n\r\nPNGTree: \r\nFor providing
     the background image to the Menu.\r\n\r\n\r\nThank you all for making this project
@@ -1090,7 +1090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -481.31, y: -272}
+  m_AnchoredPosition: {x: -200.31, y: -451.87}
   m_SizeDelta: {x: 139.3835, y: 56.2651}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2085189371
