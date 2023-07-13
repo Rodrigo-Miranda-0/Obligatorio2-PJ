@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PlayerShip
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 874
+        width: 98
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4c53216d26f4f45b417d704f6804ff
+      internalID: -2076047264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +135,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerShip: -2076047264
+      sheet_0: 1735329035
+      sheet_10: 967769318
+      sheet_11: 354346055
+      sheet_12: -1254187573
+      sheet_13: -1036201241
+      sheet_14: 920442515
+      sheet_15: -488170963
+      sheet_16: 1180901679
+      sheet_17: -1900044702
+      sheet_18: -2067779760
+      sheet_2: 1419846303
+      sheet_3: 577213414
+      sheet_4: -213101438
+      sheet_5: 1837930620
+      sheet_6: -711589951
+      sheet_7: 1870401848
+      sheet_8: 156732959
+      sheet_9: 1887280022
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
