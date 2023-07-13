@@ -10,13 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2216940069643277373}
   - component: {fileID: 2289715983755246210}
-  - component: {fileID: 8575365422894233739}
   - component: {fileID: 5768972141945943792}
   - component: {fileID: 9132453292536529374}
   - component: {fileID: 1248566515340656653}
   - component: {fileID: 8077614025148628612}
   - component: {fileID: 2741453950400030387}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: PlayerBulletBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,19 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8575365422894233739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8302082300643760123}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81a95ccb7f47ee94bb27e2d0a0002d56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 5
 --- !u!50 &5768972141945943792
 Rigidbody2D:
   serializedVersion: 4
@@ -188,4 +174,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c3607016d8a944fbb8caef159ed78b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 1
