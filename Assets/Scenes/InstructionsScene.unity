@@ -745,7 +745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 309}
+  m_AnchoredPosition: {x: 0, y: 427}
   m_SizeDelta: {x: 290.8744, y: 46.5632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101557641
@@ -1015,8 +1015,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: 155}
-  m_SizeDelta: {x: 549.2023, y: 173.3021}
+  m_AnchoredPosition: {x: -0.000009276, y: 317.07}
+  m_SizeDelta: {x: 605.361, y: 173.3021}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449920371
 MonoBehaviour:
@@ -1038,9 +1038,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'ACA HAY QUE PONER LAS REGPLAS DEL JUEGO
-
-    Y LA EXPLICACION DE LOS PUNTAJES'
+  m_text: "The game consists of three levels. \r\nYour objective is to advance through
+    the levels and score as many points as possible before either completing the
+    level or losing all your lives.\r\nWhen you complete the level 3 the game is
+    over.\r\n\r\nThere are various types of enemies in the game:\r\n\r\nNormal enemies:
+    These enemies move around the screen and can damage you on contact.\r\nShooters:
+    These enemies not only move but also shoot bullets towards your character.\r\n\r\nThroughout
+    the game, you will encounter different power-ups that can aid you:\r\n\r\nPill:
+    Collecting a pill power-up grants you an additional 50 points of health, increasing
+    your chances of survival.\r\nStar: Collecting a star power-up awards you with
+    an instant bonus of 500 points.\r\nGreen Laser: This power-up enhances your firing
+    rate, allowing you to shoot more rapidly.\r\nWhite Laser: This power-up increases
+    the damage inflicted by your bullets, making them more powerful against enemies."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14d015e703d2d024089e5c3a8f603590, type: 2}
   m_sharedMaterial: {fileID: 7264857678469508753, guid: 14d015e703d2d024089e5c3a8f603590, type: 2}
@@ -1067,8 +1076,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
