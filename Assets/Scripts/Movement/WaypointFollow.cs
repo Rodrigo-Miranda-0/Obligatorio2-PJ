@@ -14,7 +14,7 @@ public class WaypointFollow : MonoBehaviour
         Transform[] childWaypoints = pathPrefab.GetComponentsInChildren<Transform>();
         waypoints = new Transform[childWaypoints.Length - 1];
 
-        for (int i = 1; i < childWaypoints.Length; i++)
+        for (int i = 1; i < childWaypoints.Length - 1; i++)
         {
             waypoints[i - 1] = childWaypoints[i];
         }
@@ -24,7 +24,7 @@ public class WaypointFollow : MonoBehaviour
 
     void Update()
     {
-        if (currentWaypointIndex < waypoints.Length)
+        if (currentWaypointIndex < waypoints.Length - 1)
         {
             Vector3 targetPosition = waypoints[currentWaypointIndex].position;
             Vector3 moveDirection = (targetPosition - transform.position).normalized;

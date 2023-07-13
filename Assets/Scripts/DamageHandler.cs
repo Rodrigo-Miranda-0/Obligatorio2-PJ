@@ -5,36 +5,63 @@ using UnityEngine;
 public class DamageHandler : MonoBehaviour
 {
     public int health = 1;
+    public int maxHealth = 1;
     public int collisionDamage = 1;
+    public int scoreValue = 1;
     public AudioClip deathSound;
+    public GameObject deathEffect;
+    private GameObject soundPlayer;
+    private GameObject spriteSpawner;
+    private Animator animator;
 
-    private AudioSource audioSource;
+    [SerializeField] FloatingHealthbar healthbar;
+    [SerializeField] ScoreHandler scoreHandler;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        healthbar = GetComponentInChildren<FloatingHealthbar>();
+        scoreHandler = GameObject.FindWithTag("Canvas").GetComponentInChildren<ScoreHandler>();
+        soundPlayer = GameObject.FindWithTag("SoundPlayer");
+        spriteSpawner = GameObject.FindWithTag("SpriteSpawner");
+        animator = GetComponent<Animator>();
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
+        if (healthbar != null)
+        {
+            healthbar.UpdateHealth(health, maxHealth);
+        }
         if (health <= 0)
         {
             Die();
+        }else if (animator != null)
+        {
+            animator.SetTrigger("DamageEnemy");
         }
     }
-    private IEnumerator DelayedDestroy(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        Destroy(gameObject);
-    }
 
+    public void RepairDamage(int repairAmount)
+    {
+        health += repairAmount;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+    }
     private void Die()
     {
-        // if (audioSource != null && deathSound != null)
-        // {
-        //     audioSource.PlayOneShot(deathSound);
-        //     StartCoroutine(DelayedDestroy(deathSound.length)); // Delay destruction by the sound length
-        // }
+        Transform deathTransform = transform;
+        scoreHandler.UpdateScore(scoreValue);
+        if (deathSound != null)
+        {
+            soundPlayer.GetComponent<SoundPlayerManager>().PlaySound(deathSound);
+        }
+        if (spriteSpawner != null)
+        {
+            spriteSpawner.GetComponent<SpriteSpawner>().SpawnPointText(deathTransform, scoreValue);
+            spriteSpawner.GetComponent<SpriteSpawner>().SpawnDeathEffect(deathTransform, deathEffect);
+        }
         Destroy(gameObject);
     }
 }
