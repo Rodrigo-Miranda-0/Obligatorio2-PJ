@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class ButtonSoundScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public AudioClip hoverSound;
+    public AudioClip click1;
 
     private AudioSource audioSource;
 
@@ -16,7 +16,7 @@ public class ButtonSoundScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-        audioSource.clip = hoverSound;
+        audioSource.clip = click1;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
