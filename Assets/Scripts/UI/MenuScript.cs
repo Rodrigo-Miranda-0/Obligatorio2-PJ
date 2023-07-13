@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public void PlayGame() 
-    { 
-    
+    {
+        SceneManager.LoadScene("LevelOneScene");
     }
 
     public void InstructionsScene()
