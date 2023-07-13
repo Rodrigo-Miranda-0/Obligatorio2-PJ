@@ -10,6 +10,22 @@ public class PauseScript : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            if (gameIsPaused) 
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+
+        }
+    }
 
     public void Resume() 
     {
@@ -23,6 +39,11 @@ public class PauseScript : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 0f;
         gameIsPaused = true;
+    }
+
+    public void ContinueGameScene()
+    {
+        
     }
 
     public void MainScene()
