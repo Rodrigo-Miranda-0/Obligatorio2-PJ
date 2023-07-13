@@ -15,6 +15,6 @@ public class HealthUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthText.text = "HP: " + player.GetComponent<DamageHandler>().health.ToString();
+        healthText.text = "HP: " + player.GetComponent<DamageHandlerPlayer>().health.ToString();
     }
 }

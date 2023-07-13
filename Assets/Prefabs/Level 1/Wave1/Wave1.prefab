@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4933477122055747599}
   - component: {fileID: 4933477122055747592}
+  - component: {fileID: -4661751997148026330}
   m_Layer: 0
   m_Name: Wave1
   m_TagString: Untagged
@@ -44,7 +45,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a33009da97348841a6dae122d68d0ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4169440820691686317, guid: 938b0ea3733d9434397bdd7711369ec4, type: 3}
-  spawnInterval: 2
-  numberOfEnemies: 10
-  pathPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 2477571195084046246, guid: 938b0ea3733d9434397bdd7711369ec4, type: 3}
+  spawnInterval: 1.5
+  numberOfEnemies: 6
+  pathPrefab: {fileID: 4559294101499909375, guid: 337befaddbdb23c44be99f9676a04195, type: 3}
+--- !u!114 &-4661751997148026330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933477122055747598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81a95ccb7f47ee94bb27e2d0a0002d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 30

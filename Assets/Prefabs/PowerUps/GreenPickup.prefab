@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5061273845802047932}
   - component: {fileID: 4316118774987083649}
   - component: {fileID: -4311845325030569824}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}

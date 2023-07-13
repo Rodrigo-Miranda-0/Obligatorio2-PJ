@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 2477571195084046251}
   - component: {fileID: 2477571195084046244}
   - component: {fileID: 2477571195084046245}
-  m_Layer: 11
+  - component: {fileID: 476380863610473524}
+  m_Layer: 12
   m_Name: Enemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   maxHealth: 3
-  collisionDamage: 50
+  collisionDamage: 25
   scoreValue: 100
   deathSound: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
   deathEffect: {fileID: 4794043405585894037, guid: 37138c0c33167b04fa1fb90b7f5a794f, type: 3}
@@ -191,6 +192,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &476380863610473524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477571195084046246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81a95ccb7f47ee94bb27e2d0a0002d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 6
 --- !u!1 &2477571195360572376
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +217,7 @@ GameObject:
   - component: {fileID: 2477571195360572380}
   - component: {fileID: 2477571195360572381}
   - component: {fileID: 2477571195360572382}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2477571195476681067}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +354,7 @@ GameObject:
   - component: {fileID: 2477571195891301102}
   - component: {fileID: 2477571195891301100}
   - component: {fileID: 2477571195891301101}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +458,7 @@ GameObject:
   - component: {fileID: 2477571196194497274}
   - component: {fileID: 2477571196194497272}
   - component: {fileID: 2477571196194497273}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +534,7 @@ GameObject:
   - component: {fileID: 2477571196368609282}
   - component: {fileID: 2477571196368609280}
   - component: {fileID: 2477571196368609281}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

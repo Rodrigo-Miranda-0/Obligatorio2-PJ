@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9132453292536529374}
   - component: {fileID: 1248566515340656653}
   - component: {fileID: 8077614025148628612}
-  - component: {fileID: 2741453950400030387}
+  - component: {fileID: -5259117485486034274}
   m_Layer: 9
   m_Name: BulletRed
   m_TagString: Untagged
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 3
---- !u!114 &2741453950400030387
+--- !u!114 &-5259117485486034274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8302082300643760123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3c3607016d8a944fbb8caef159ed78b, type: 3}
+  m_Script: {fileID: 11500000, guid: fde6ac74d11dc9d45b72b03aec0b0033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 5

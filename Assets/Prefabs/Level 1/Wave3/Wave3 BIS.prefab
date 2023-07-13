@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4933477122055747599}
   - component: {fileID: 4933477122055747592}
-  - component: {fileID: -2807406554346535826}
+  - component: {fileID: 6813111413294592399}
   m_Layer: 0
-  m_Name: Wave3
+  m_Name: Wave3 BIS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,8 +48,8 @@ MonoBehaviour:
   enemyPrefab: {fileID: 7791057728299992919, guid: 5e459d213dd4c0a4aa4927ee05068e61, type: 3}
   spawnInterval: 2
   numberOfEnemies: 1
-  pathPrefab: {fileID: 4559294101499909375, guid: fe1a2027237a2e84392e9cbc9efc0ace, type: 3}
---- !u!114 &-2807406554346535826
+  pathPrefab: {fileID: 4559294101499909375, guid: 4a24490799386bc4ab602ff4c80defbc, type: 3}
+--- !u!114 &6813111413294592399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

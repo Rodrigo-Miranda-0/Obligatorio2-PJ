@@ -16,7 +16,9 @@ public class LevelEventHandler : MonoBehaviour
     {
         foreach (float timing in waveTimings)
         {
+            Debug.Log("Waiting to spawn wave " + currentWaveIndex);
             yield return new WaitForSeconds(timing);
+            Debug.Log("wave " + currentWaveIndex);
             SpawnWave();
             currentWaveIndex++;
         }
@@ -24,11 +26,18 @@ public class LevelEventHandler : MonoBehaviour
 
     private void SpawnWave()
     {
-        GameObject wavePrefab = wavePrefabs[currentWaveIndex];
+        GameObject wavePrefab = InitializeWavePrefab();
         SpawnWave spawnWave = wavePrefab.GetComponent<SpawnWave>();
         if (spawnWave != null)
         {
             spawnWave.Spawn();
         }
+    }
+
+    private GameObject InitializeWavePrefab()
+    {
+        GameObject wavePrefab = Instantiate(wavePrefabs[currentWaveIndex]);
+        wavePrefab.transform.position = transform.position;
+        return wavePrefab;
     }
 }

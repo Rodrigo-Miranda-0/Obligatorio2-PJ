@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5061273845802047932}
   - component: {fileID: 4316118774987083649}
   - component: {fileID: 7454629980139446021}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -7,6 +7,8 @@ TagManager:
   - Canvas
   - SoundPlayer
   - SpriteSpawner
+  - LevelManager
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - Stars
   - PlayerBullets
   - EnemyBullets
+  - PowerUps
   - Player
   - Enemies
-  - 
   - 
   - 
   - 

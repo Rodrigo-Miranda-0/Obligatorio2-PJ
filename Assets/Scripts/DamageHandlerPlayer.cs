@@ -2,59 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageHandler : MonoBehaviour
+public class DamageHandlerPlayer : MonoBehaviour
 {
-    public int health = 1;
-    public int maxHealth = 1;
-    public int collisionDamage = 1;
-    public int scoreValue = 1;
+    public int health = 100;
+    public int maxHealth = 100;
     private int damageByCollision;
     public AudioClip deathSound;
     public GameObject deathEffect;
     private GameObject soundPlayer;
     private GameObject spriteSpawner;
     private Animator animator;
-
-    [SerializeField] FloatingHealthbar healthbar;
+    private GameObject levelManager;
     [SerializeField] ScoreHandler scoreHandler;
 
     private void Start()
     {
-        healthbar = GetComponentInChildren<FloatingHealthbar>();
         scoreHandler = GameObject.FindWithTag("Canvas").GetComponentInChildren<ScoreHandler>();
         soundPlayer = GameObject.FindWithTag("SoundPlayer");
         spriteSpawner = GameObject.FindWithTag("SpriteSpawner");
+        levelManager = GameObject.FindWithTag("LevelManager");
         animator = GetComponent<Animator>();
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
-        if (healthbar != null)
-        {
-            healthbar.UpdateHealth(health, maxHealth);
-        }
         if (health <= 0)
         {
             Die();
         }else if (animator != null)
         {
-            animator.SetTrigger("DamageEnemy");
+            animator.SetTrigger("DamagePlayer");
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag != "PlayerBullet")
-        {
-            if (other.gameObject.tag == "Player")
-            {
-                damageByCollision = 100;
-            }
-            else {
-                damageByCollision = other.GetComponent<DamageHandler>().collisionDamage;
-            }
-            TakeDamage(damageByCollision);
-        }
+        damageByCollision = other.GetComponent<DamageHandler>().collisionDamage;
+        TakeDamage(damageByCollision);
     }
 
     public void RepairDamage(int repairAmount)
@@ -68,16 +52,15 @@ public class DamageHandler : MonoBehaviour
     private void Die()
     {
         Transform deathTransform = transform;
-        scoreHandler.UpdateScore(scoreValue);
         if (deathSound != null)
         {
             soundPlayer.GetComponent<SoundPlayerManager>().PlaySound(deathSound);
         }
         if (spriteSpawner != null)
         {
-            spriteSpawner.GetComponent<SpriteSpawner>().SpawnPointText(deathTransform, scoreValue);
             spriteSpawner.GetComponent<SpriteSpawner>().SpawnDeathEffect(deathTransform, deathEffect);
         }
-        Destroy(gameObject);
+        levelManager.GetComponent<GameOverHandler>().GameOver();
+        gameObject.SetActive(false);
     }
 }

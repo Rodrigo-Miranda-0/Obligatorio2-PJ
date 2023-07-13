@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4375067566583022613}
   - component: {fileID: 4621237802756169023}
   - component: {fileID: 1275779226704148349}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 523306779468190506}
   - component: {fileID: 1441984518853879597}
   - component: {fileID: 4034429734965567905}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 5070987559051736612}
   - component: {fileID: 8098778810480087116}
   - component: {fileID: 8747513804844463467}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5304020978614579599}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 3576338630728135361}
   - component: {fileID: 8471012194687052818}
   - component: {fileID: 929728255527431435}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Enemy2 - Shooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,11 +414,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec0d857ad1ad3844a61991ee5044db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
-  maxHealth: 15
+  health: 7
+  maxHealth: 7
   collisionDamage: 50
+  scoreValue: 200
   deathSound: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
+  deathEffect: {fileID: 4794043405585894037, guid: 37138c0c33167b04fa1fb90b7f5a794f, type: 3}
   healthbar: {fileID: 0}
+  scoreHandler: {fileID: 0}
 --- !u!114 &6624770161392955128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,7 +600,7 @@ GameObject:
   - component: {fileID: 3230298495669819151}
   - component: {fileID: 8429880224703308210}
   - component: {fileID: 3046404518459339308}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
